@@ -23,3 +23,4 @@
 
 (require 'cConfig)
 (require 'cedetConfig)
+(require 'yasnippetConfig)

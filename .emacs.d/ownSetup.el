@@ -1,6 +1,9 @@
 (provide 'ownSetup)
 
 ;;some convenience setup
+(setq default-frame-alist 
+'((height . 30) (width . 80) (menu-bar-lines . 20) (tool-bar-lines . 0))) 
+
 (setq inhibit-startup-message t)
 (setq column-number-mode t)
 (setq mouse-yank-at-point t)
@@ -17,8 +20,6 @@
 (setq dired-recursive-copies 'top)
 (setq dired-recursive-deletes 'top)
 
-(setq default-frame-alist 
-'((height . 30) (width . 80) (menu-bar-lines . 20) (tool-bar-lines . 0))) 
 
 ;;backup settings
 (setq
