@@ -16,6 +16,7 @@
 (auto-image-file-mode)
 (global-font-lock-mode t)
 (ido-mode t)
+(ansi-color-for-comint-mode-on) ;set shell colorful
 
 (setq dired-recursive-copies 'top)
 (setq dired-recursive-deletes 'top)
