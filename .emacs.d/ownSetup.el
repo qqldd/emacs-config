@@ -17,6 +17,7 @@
 (global-font-lock-mode t)
 (ido-mode t)
 (ansi-color-for-comint-mode-on) ;set shell colorful
+(customize-set-variable 'scroll-bar-mode 'right)
 
 (setq dired-recursive-copies 'top)
 (setq dired-recursive-deletes 'top)
