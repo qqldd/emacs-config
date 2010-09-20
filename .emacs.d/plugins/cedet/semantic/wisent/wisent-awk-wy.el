@@ -2,8 +2,8 @@
 
 ;; Copyright (C) 2002 David Ponce
 
-;; Author: ahei <ahei@ahei-ubuntu>
-;; Created: 2009-11-24 00:00:51+0800
+;; Author: myrice <myrice@myrice-laptop>
+;; Created: 2010-08-11 00:46:58+0800
 ;; Keywords: syntax
 ;; X-RCS: $Id$
 

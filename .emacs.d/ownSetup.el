@@ -16,9 +16,17 @@
 (auto-image-file-mode)
 (global-font-lock-mode t)
 (ido-mode t)
+;;switch C-j and RET
+(global-set-key (kbd "RET") 'newline-and-indent)
+(global-set-key (kbd "C-j") 'newline)
+
 (ansi-color-for-comint-mode-on) ;set shell colorful
 (customize-set-variable 'scroll-bar-mode 'right)
-
+(fset 'yes-or-no-p 'y-or-n-p) ;change 'yes or no' to 'y or n'
+(setq x-select-enable-clipboard t) ;copy to clipboard
+(display-time)
+;;(tool-bar-mode -1) ;do not display tool bar
+   
 (setq dired-recursive-copies 'top)
 (setq dired-recursive-deletes 'top)
 

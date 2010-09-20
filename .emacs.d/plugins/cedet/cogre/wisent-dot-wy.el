@@ -2,8 +2,8 @@
 
 ;; Copyright (C) 2003, 2004, 2009 Eric M. Ludlam
 
-;; Author: ahei <ahei@ahei-ubuntu>
-;; Created: 2009-11-24 00:01:16+0800
+;; Author: myrice <myrice@myrice-laptop>
+;; Created: 2010-08-11 00:47:23+0800
 ;; Keywords: syntax
 ;; X-RCS: $Id$
 

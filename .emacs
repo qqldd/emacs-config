@@ -15,7 +15,7 @@
     ("\\.rdf$".  sgml-mode)
     ("\\.session" . emacs-lisp-mode)
     ("\\.l$" . c-mode)
-    ("\\.cu$" . c-mode)
+    ("\\.cu$" . c++-mode)
     ("\\.css$" . css-mode)
     ("\\.cfm$" . html-mode)
     ("gnus" . emacs-lisp-mode)
@@ -24,3 +24,4 @@
 (require 'cConfig)
 (require 'cedetConfig)
 (require 'yasnippetConfig)
+(require 'goConfig)

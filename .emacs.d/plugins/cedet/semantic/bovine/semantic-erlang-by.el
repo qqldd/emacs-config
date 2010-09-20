@@ -2,8 +2,8 @@
 
 ;; Copyright (C) 2002, 2003 Vladimir G. Sekissov
 
-;; Author: ahei <ahei@ahei-ubuntu>
-;; Created: 2009-11-24 00:01:05+0800
+;; Author: myrice <myrice@myrice-laptop>
+;; Created: 2010-08-11 00:47:11+0800
 ;; Keywords: syntax
 ;; X-RCS: $Id$
 
