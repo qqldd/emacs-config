@@ -25,3 +25,4 @@
 (require 'cedetConfig)
 (require 'yasnippetConfig)
 (require 'goConfig)
+(require 'auctexConfig)
