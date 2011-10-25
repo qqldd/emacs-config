@@ -2,7 +2,7 @@
 
 ;;some convenience setup
 (setq default-frame-alist 
-'((height . 30) (width . 80) (menu-bar-lines . 20) (tool-bar-lines . 0))) 
+'((height . 30) (width . 80) (menu-bar-lines . 20) (tool-bar-lines . 0)))
 
 (setq inhibit-startup-message t)
 (setq column-number-mode t)
@@ -40,3 +40,6 @@
     kept-new-versions 6 ; 保留最近的6个备份文件
     kept-old-versions 2 ; 保留最早的2个备份文件
     version-control t) ; 多次备份
+
+;;org-mode ditaa path
+(setq org-ditaa-jar-path "~/.emacs.d/plugins/ditaa.jar")
