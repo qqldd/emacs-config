@@ -1,2 +1,23 @@
-This is Emacs config files
+#+STARTUP: indent
+#+TODO: TODO(t) | DONE(d)
+
+This is Emacs config file. 
+For better view, please open this file using org-mode in Emacs
+Makefile from jesse
+
+Now I have config following:
+* C/CPP mode with M-n for synatic completation and M-/ for raw comletation
+* Simple AuCTeX
+* Simple golang
+* start up to show line number
+* YaSnippet
+* Others
+
+* Todos [0/3]
+** TODO ECB mode?
+** TODO More powerful completation in C/CPP
+** TODO ?
+
+
+
 
