@@ -44,8 +44,5 @@
 ;;org-mode ditaa path
 (setq org-ditaa-jar-path "~/.emacs.d/plugins/ditaa.jar")
 
-(custom-set-variables
- '(global-linum-mode t)
- )
-(custom-set-faces
- )
+;;For global varible I do not know how to config, add to hook
+(add-hook 'find-file-hook (lambda () (linum-mode 1)))

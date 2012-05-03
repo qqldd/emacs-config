@@ -26,4 +26,4 @@
 (require 'yasnippetConfig)
 (require 'goConfig)
 (require 'auctexConfig)
-
+(require 'highlightSymbolConfig)

@@ -2,9 +2,11 @@
 
 ;;c and cpp configurations
 (require 'cc-mode)
+(require 'highlight-symbol)
+
 (defun my-c-mode-common-hook()
-  (setq tab-width 4 indent-tabs-mode nil)
   (c-set-style "K&R")
+  (setq tab-width 4 indent-tabs-mode nil)
   (setq c-basic-offset 4)
   (require 'xcscope)
   (local-set-key (kbd "RET") 'newline-and-indent)
@@ -12,6 +14,15 @@
   (define-key c-mode-base-map (kbd "<f12>") 'semantic-ia-fast-jump)
   (define-key c-mode-base-map (kbd "M-o") 'eassist-switch-h-cpp)
   (define-key c-mode-base-map (kbd "M-m") 'eassist-list-methods)
+
+  ;;hightlight-symbol
+  (highlight-symbol-mode t)
+  (local-set-key (kbd "C-c h h") 'highlight-symbol-at-point)
+  (local-set-key (kbd "C-C h n") 'highlight-symbol-next)
+  (local-set-key (kbd "C-C h p") 'highlight-symbol-prev)
+  (local-set-key (kbd "C-C h R") 'highlight-symbol-remove-all)
+  (local-set-key (kbd "C-C h r") 'highlight-symbol-query-replace)
+  
 )
 
 (add-hook 'c-mode-common-hook 'my-c-mode-common-hook())
