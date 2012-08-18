@@ -10,8 +10,9 @@
   (setq c-basic-offset 4)
   (require 'xcscope)
   (local-set-key (kbd "RET") 'newline-and-indent)
-  (define-key c-mode-base-map (kbd "M-n") 'semantic-ia-complete-symbol-menu)
-  (define-key c-mode-base-map (kbd "<f12>") 'semantic-ia-fast-jump)
+  (define-key c-mode-base-map (kbd "M-n") 'semantic-ia-complete-symbol)
+  (define-key c-mode-base-map (kbd "C-c ?") 'semantic-ia-complete-symbol-menu)
+  (define-key c-mode-base-map (kbd "C-c j") 'semantic-ia-fast-jump)
   (define-key c-mode-base-map (kbd "M-o") 'eassist-switch-h-cpp)
   (define-key c-mode-base-map (kbd "M-m") 'eassist-list-methods)
 
