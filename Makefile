@@ -1,7 +1,4 @@
-install: $(HOME)/.emacs $(HOME)/.emacs.d
-
-$(HOME)/.emacs: .emacs
-	ln -s $(shell pwd)/$< $@
+install: $(HOME)/.emacs.d
 
 $(HOME)/.emacs.d: .emacs.d
 	ln -s $(shell pwd)/$< $@
