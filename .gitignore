@@ -1,2 +1,8 @@
 .emacs.d/backups/*
 .emacs.d/auto-save-list/*
+*.elc
+.emacs.d/server/*
+.emacs.d/eshell/history
+.emacs.d/tramp
+.emacs.d/url
+

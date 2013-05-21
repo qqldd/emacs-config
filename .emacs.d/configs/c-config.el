@@ -1,14 +1,12 @@
-(provide 'cConfig)
-
 ;;c and cpp configurations
 (require 'cc-mode)
 (require 'highlight-symbol)
+(require 'xcscope)
 
 (defun my-c-mode-common-hook()
   (c-set-style "K&R")
   (setq tab-width 4 indent-tabs-mode nil)
   (setq c-basic-offset 4)
-  (require 'xcscope)
   (local-set-key (kbd "RET") 'newline-and-indent)
   (define-key c-mode-base-map (kbd "M-n") 'semantic-ia-complete-symbol)
   (define-key c-mode-base-map (kbd "C-c ?") 'semantic-ia-complete-symbol-menu)

@@ -1,8 +1,6 @@
-(provide 'cedetConfig)
-
 ;;cedet configurations
 ;;CEDET
-(add-to-list 'load-path "~/.emacs.d/plugins/cedet/common")
+(load-file "~/.emacs.d/plugins/cedet-1.1/common/cedet.el")
 (require 'cedet)
 (require 'semantic-ia)
 
