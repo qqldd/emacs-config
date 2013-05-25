@@ -1,6 +1,7 @@
 
 ;;some convenience setup
-;;(setq default-frame-alist 
+(setq default-frame-alist
+      '((frame-background-mode . 'dark)))
 ;;'((height . 30) (width . 80) (menu-bar-lines . 20) (tool-bar-lines . 0)))
 
 (set-frame-position (selected-frame)

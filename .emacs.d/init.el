@@ -2,19 +2,8 @@
 (add-to-list 'load-path "~/.emacs.d/plugins")
 (add-to-list 'load-path "~/.emacs.d")
 
-
-
-
-;(load "server")
-;(unless (server-running-p) (server-start))
-;; (setq server-use-tcp t
-;;       server-port    52699)
-;; (defun server-start-and-copy ()
-;;   (server-start)
-;;   (copy-file "~/.emacs.d/server/server" "/arch:.emacs.d/server/server" t))
-;; (add-hook 'emacs-startup-hook 'server-start-and-copy)
-
 (load "configs")
+
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
