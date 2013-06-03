@@ -1,10 +1,10 @@
+(load "configs/defuns")
 
-(defun call-raise-frame ()
-   (raise-frame))
-(defun end-server-edit ()
-   (shell-command "osascript -e \"tell application \\\"System Events\\\" to keystroke tab using command down\""))
-(add-hook 'server-visit-hook 'call-raise-frame)
-;;(add-hook 'server-done-hook 'end-server-edit)
+;(add-hook 'server-visit-hook (lambda () (print (display-pixel-width))))
+
+
+;;(defun end-server-edit ()
+;;   (shell-command "osascript -e \"tell application \\\"System Events\\\" to keystroke tab using command down\""));;(add-hook 'server-done-hook 'end-server-edit)
 
 
 

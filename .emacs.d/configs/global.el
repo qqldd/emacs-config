@@ -1,18 +1,16 @@
+(load "configs/defuns")
 
-;;some convenience setup
-(setq default-frame-alist
-      '((frame-background-mode . 'dark)))
-;;'((height . 30) (width . 80) (menu-bar-lines . 20) (tool-bar-lines . 0)))
-
-(set-frame-position (selected-frame)
-		    (- (/ (display-pixel-width) 2) 320)
-		    (- (/ (display-pixel-height) 2) 320))
+;;(set-frame-position (selected-frame)
+;;        (- (/ (display-pixel-width) 2) 320)
+;;        (- (/ (display-pixel-height) 2) 320))
 
 (setq inhibit-startup-message t)
 (setq column-number-mode t)
 (setq mouse-yank-at-point t)
 (setq scroll-margin 3
       scroll-conservatively 10000)
+
+(delete-selection-mode 1)
 (show-paren-mode t)
 (setq show-paren-style 'parentheses)
 (mouse-avoidance-mode 'animate)
@@ -27,15 +25,13 @@
 (setq ns-right-command-modifier (quote meta))
 
 (ansi-color-for-comint-mode-on) ;set shell colorful
-(customize-set-variable 'scroll-bar-mode 'right)
+
 (fset 'yes-or-no-p 'y-or-n-p) ;change 'yes or no' to 'y or n'
 (setq x-select-enable-clipboard t) ;copy to clipboard
 (display-time)
-;;(tool-bar-mode -1) ;do not display tool bar
    
 (setq dired-recursive-copies 'top)
 (setq dired-recursive-deletes 'top)
-
 
 ;;backup settings
 (setq
@@ -50,10 +46,9 @@
 ;;org-mode ditaa path
 (setq org-ditaa-jar-path "~/.emacs.d/plugins/ditaa.jar")
 
-;;For global varible I do not know how to config, add to hook
-(add-hook 'find-file-hook (lambda () (linum-mode 1)))
+(global-linum-mode 1)
 
- (mapcar
+(mapcar
   (function (lambda (setting)
  	     (setq auto-mode-alist
  		   (cons setting auto-mode-alist))))
@@ -69,30 +64,16 @@
     ("gnus" . emacs-lisp-mode)
     ("\\.idl$" . idl-mode)))
  
-;; toggle window split
-(defun toggle-window-split ()
-  (interactive)
-  (if (= (count-windows) 2)
-      (let* ((this-win-buffer (window-buffer))
-	     (next-win-buffer (window-buffer (next-window)))
-	     (this-win-edges (window-edges (selected-window)))
-	     (next-win-edges (window-edges (next-window)))
-	     (this-win-2nd (not (and (<= (car this-win-edges)
-					 (car next-win-edges))
-				     (<= (cadr this-win-edges)
-					 (cadr next-win-edges)))))
-	     (splitter
-	      (if (= (car this-win-edges)
-		     (car (window-edges (next-window))))
-		  'split-window-horizontally
-		'split-window-vertically)))
-	(delete-other-windows)
-	(let ((first-win (selected-window)))
-	  (funcall splitter)
-	  (if this-win-2nd (other-window 1))
-	  (set-window-buffer (selected-window) this-win-buffer)
-	  (set-window-buffer (next-window) next-win-buffer)
-	  (select-window first-win)
-	  (if this-win-2nd (other-window 1))))))
-
 (add-hook 'emacs-startup-hook 'toggle-window-split)
+
+(require 'weechat)
+
+(xterm-mouse-mode t)
+(global-set-key [mouse-4] '(lambda ()
+			     (interactive)
+			     (scroll-down 1)))
+(global-set-key [mouse-5] '(lambda ()
+			     (interactive)
+			     (scroll-up 1)))
+
+(require 'wgrep-ack)

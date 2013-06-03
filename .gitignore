@@ -5,4 +5,5 @@
 .emacs.d/eshell/history
 .emacs.d/tramp
 .emacs.d/url
+.emacs.d/elpa/archives
 

@@ -1,0 +1,6 @@
+#!/bin/bash
+if [ $# != 2 ]; then
+    echo "Must type two file names to diff"
+    exit -1
+fi
+emacsclient -t -a "" -e "(ediff \"$1\" \"$2\")"
