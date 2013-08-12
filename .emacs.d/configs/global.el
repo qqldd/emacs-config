@@ -66,8 +66,6 @@
  
 (add-hook 'emacs-startup-hook 'toggle-window-split)
 
-(require 'weechat)
-
 (xterm-mouse-mode t)
 (global-set-key [mouse-4] '(lambda ()
 			     (interactive)
@@ -77,3 +75,4 @@
 			     (scroll-up 1)))
 
 (require 'wgrep-ack)
+(require 'p4)
