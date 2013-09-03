@@ -1,4 +1,4 @@
-#(setq debug-on-error t)
+;(setq debug-on-error t)
 
 (add-to-list 'load-path "~/.emacs.d/plugins")
 (add-to-list 'load-path "~/.emacs.d")
