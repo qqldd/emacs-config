@@ -12,3 +12,5 @@
 (load "configs/yasnippet")
 (load "configs/auctex")
 (load "configs/ediff")
+(load "configs/kbd-macro")
+
