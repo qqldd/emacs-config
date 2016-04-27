@@ -1,6 +1,8 @@
 #+STARTUP: indent
 #+TODO: TODO(t) | DONE(d)
 
+Given up. Using spacemacs instead.
+
 This is Emacs config file. 
 For better view, please open this file using org-mode in Emacs
 Makefile from jesse
